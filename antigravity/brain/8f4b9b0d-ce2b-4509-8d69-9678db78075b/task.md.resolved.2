@@ -1,0 +1,23 @@
+# Task Tracking: Simulink Verification Dashboard & Chatbot
+
+## 1. Setup & Environment
+- [x] Ensure `pandas` and `plotly` (or `matplotlib`) are installed in the environment.
+
+## 2. Refactoring [server.py](file:///Users/leehyeyoon/.gemini/antigravity/scratch/simulink_assistant/server.py)
+- [x] Add sidebar navigation to switch between "Chatbot" and "Dashboard" modes.
+- [x] Move existing chatbot logic into a dedicated function or tab/page.
+
+## 3. Developing the Dashboard
+- [x] Create mock data simulating Simulink validation metrics (e.g., function coverage, issue count over time).
+- [x] Implement Top-Level Summary Metrics (`st.metric`).
+- [x] Implement Data Tables (`st.dataframe` or `st.table`) showing function testing status.
+- [x] Implement Visualizations (Bar chart for issues per module, Line chart for coverage over time).
+
+## 4. UI/UX Polish
+- [x] Ensure responsive layout using `st.columns`.
+- [x] Apply clean, modern styling (where applicable via Streamlit components).
+
+## 5. Verification
+- [/] Run the Streamlit app locally.
+- [/] Verify tab switching works seamlessly (Will request user to test UI).
+- [/] Ensure graphs render correctly without errors (Will request user to test UI).

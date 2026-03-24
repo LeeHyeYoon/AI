@@ -1,0 +1,40 @@
+# Dashboard & Chatbot Streamlit Application
+
+The goal is to expand the existing Simulink Verification Chatbot into a full-fledged web application featuring both an interactive chatbot and a comprehensive data dashboard.
+
+## Usability & Navigation
+We will use Streamlit's Sidebar (`st.sidebar.radio` or `st.sidebar.selectbox`) to let the user switch between two main views:
+1. **Chatbot (AI Assistant)**
+2. **Dashboard (Data Visualization)**
+
+## Proposed Changes
+
+### [/Users/leehyeyoon/.gemini/antigravity/scratch/simulink_assistant/requirements.txt](file:///Users/leehyeyoon/.gemini/antigravity/scratch/simulink_assistant/requirements.txt)
+#### [MODIFY] [requirements.txt](file:///Users/leehyeyoon/.gemini/antigravity/scratch/simulink_assistant/requirements.txt)
+- Add `pandas` and `plotly` to ensure graphing and data manipulation dependencies are documented.
+
+### [/Users/leehyeyoon/.gemini/antigravity/scratch/simulink_assistant/server.py](file:///Users/leehyeyoon/.gemini/antigravity/scratch/simulink_assistant/server.py)
+#### [MODIFY] [server.py](file:///Users/leehyeyoon/.gemini/antigravity/scratch/simulink_assistant/server.py)
+- **Imports**: Add `pandas`, `plotly.express`.
+- **UI Architecture**: Introduce a sidebar menu for navigation.
+- **Chatbot View**: Encapsulate the existing `st.chat_input` and message loop into a `render_chatbot()` function.
+- **Dashboard View**: Create a new `render_dashboard()` function containing:
+  - Mock data generation (e.g., historical coverage trend, open issues by module, function status table).
+  - Summary metrics using `st.columns` and `st.metric`.
+  - A Line Chart showing coverage or test success rate over time.
+  - A Bar Chart showing outstanding issues grouped by severity or module.
+  - An interactive Data Table using `st.dataframe()`.
+
+## Verification Plan
+
+### Automated Tests
+*Streamlit apps are generally tested via UI/E2E frameworks, but for this fast prototype, we will rely on manual visual verification.*
+
+### Manual Verification
+1. Run `python -m streamlit run server.py`.
+2. Inspect the Sidebar to ensure both "AI Chatbot" and "Dashboard" options appear.
+3. Click "Dashboard" and verify:
+   - Summary Metric cards are rendered.
+   - Plotly/Matplotlib charts (Line & Bar) are displayed without tracebacks.
+   - The Pandas dataframe is visible and sortable.
+4. Click "AI Chatbot" and verify the previously built regex conversational feature works seamlessly within its own view.

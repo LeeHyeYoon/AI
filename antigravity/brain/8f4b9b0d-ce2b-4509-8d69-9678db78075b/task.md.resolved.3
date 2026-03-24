@@ -1,0 +1,28 @@
+# Task Tracking: Comprehensive Simulink Verification App
+
+## 1. Setup & Architecture
+- [ ] Define the multi-page structure using button-based navigation (Card UI) instead of sidebar.
+- [ ] Initialize `st.session_state` to hold persistent tracking data (Assignee, Subsystem, Difficulty, Target, Cumulative, Progress).
+
+## 2. Developing the Navigation & UI
+- [ ] Implement robust Card-style buttons for main menu: "검증 대시보드", "데이터 입력", "챗봇".
+
+## 3. Developing the Data Input Form
+- [ ] Create `st.form` for adding/updating task progress.
+- [ ] Handle calculations (Cumulative Count = Previous Cumulative + Today's Count, Progress % = Cumulative / Total Assigned).
+- [ ] Update session state on form submission.
+
+## 4. Developing the Verification Dashboard
+- [ ] Display Summary Cards (Total Assigned, Average Progress, etc.).
+- [ ] Display the Data Table with all tracking metrics.
+- [ ] Implement visual Bar Chart using `plotly` for Progress (%) per Person.
+
+## 5. Expanding the Chatbot
+- [ ] Incorporate comprehensive troubleshooting and Simulink concept knowledge base.
+- [ ] Structure answers to include Root Cause + Step-by-Step Resolution.
+- [ ] Preserve chat history in the view.
+
+## 6. Verification
+- [ ] Verify state persists across component switching.
+- [ ] Verify calculations in the dashboard are correct.
+- [ ] Verify chatbot responses cover the new extended questions.
