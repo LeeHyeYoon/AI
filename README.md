@@ -1,4 +1,5 @@
 **🛡️ V&V 통합 관리 시스템 v3.1 (README.md)**
+
 📌 Project Overview
 본 프로젝트는 MATLAB/Simulink 기반 제어로직의 검증(Verification) 및 확인(Validation) 프로세스를 효율적으로 관리하기 위한 Streamlit 기반 통합 대시보드입니다. 
 엔지니어별 검증 진척도, 요구사항 대응 현황 파악 및 RAG(Retrieval-Augmented Generation) 개념을 응용한 지식 기반 챗봇을 통해 실무에서 발생하는 기술적 문제에 대한 즉각적인 솔루션을 제공합니다.
