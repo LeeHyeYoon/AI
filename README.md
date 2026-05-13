@@ -29,6 +29,13 @@ Data Analysis: Pandas
 Visualization: Plotly
 Knowledge Base: Custom RAG Logic
 
+<img width="1512" height="817" alt="Image" src="https://github.com/user-attachments/assets/24271b5e-d18e-454f-8cfc-644992cb515d" />
+
+<img width="1512" height="817" alt="Image" src="https://github.com/user-attachments/assets/0f723403-808a-4c4f-b184-8a96dd9954bf" />
+
+<img width="1512" height="817" alt="Image" src="https://github.com/user-attachments/assets/1444b4a3-74d9-4b8d-ba04-876d9162b9bf" />
+
+<img width="1512" height="817" alt="Image" src="https://github.com/user-attachments/assets/1b4140f6-d5d9-466c-b25e-548c894aea57" />
 
 
 # 1. 필수 패키지 설치
