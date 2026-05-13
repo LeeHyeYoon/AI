@@ -29,6 +29,8 @@ Data Analysis: Pandas
 Visualization: Plotly
 Knowledge Base: Custom RAG Logic
 
+
+
 # 1. 필수 패키지 설치
 pip install streamlit pandas plotly
 
