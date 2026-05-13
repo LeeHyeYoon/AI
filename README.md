@@ -33,7 +33,7 @@ Knowledge Base: Custom RAG Logic
 pip install streamlit pandas plotly
 
 # 2. 애플리케이션 실행
-/Users/leehyeyoon/.gemini/antigravity/scratch 경로 이동 후
+/antigravity/scratch 경로 이동 후
 python -m streamlit run advanced_app.py
 
 * server.py 파일은 데모 버전입니다
